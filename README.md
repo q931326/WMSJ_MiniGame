@@ -26,7 +26,7 @@ private void OnEnable()
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // 假设您的Canvas位于名为"Canvas"的GameObject下，并且位于名为"SceneManagement"的GameObject下
+        // 这里的"SceneManagement"是一个目录，而Canvas和SceneManagement（目录本身）则是这个目录的子对象。
         GameObject sceneManagementObj = GameObject.Find("SceneManagement");
         if (sceneManagementObj != null)
         {
