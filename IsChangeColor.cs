@@ -42,7 +42,7 @@ public class IsChangeColor : MonoBehaviour
     }
     private void UpdateColor()
     {
-        Color newColor = canBePushed ? renderer.material.color:Color.black; // 如果可以推动，变为黑色；否则保持原色
+        Color newColor = canBePushed ? renderer.material.color:Color.black; // 如果不可以推动，变为黑色；否则保持原色
         renderer.material.color = newColor; // 应用新颜色
     }
 }
